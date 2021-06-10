@@ -1,0 +1,18 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    int codigo, quantidade;
+    string[] x = Console.ReadLine().Split(' ');
+    codigo = int.Parse(x[0]);
+    quantidade = int.Parse(x[1]);
+    switch (codigo) {
+      case 1: Console.WriteLine($"Total: R$ {quantidade * 4.00:0.00}"); break;
+      case 2: Console.WriteLine($"Total: R$ {quantidade * 4.50:0.00}"); break;
+      case 3: Console.WriteLine($"Total: R$ {quantidade * 5.00:0.00}"); break;
+      case 4: Console.WriteLine($"Total: R$ {quantidade * 2.00:0.00}"); break;
+      case 5: Console.WriteLine($"Total: R$ {quantidade * 1.50:0.00}"); break;
+    }
+    
+  }
+}
