@@ -1,0 +1,18 @@
+using System;
+
+class MainClass {
+  public static void Main (string[] args) {
+    int codigo, quantidade, codigo2, quantidade2;
+    double valor, valor2, total;
+    string[] x = Console.ReadLine().Split(' ');
+    codigo = int.Parse(x[0]);
+    quantidade = int.Parse(x[1]);
+    valor = double.Parse(x[2]);
+    string[] y = Console.ReadLine().Split(' ');
+    codigo2 = int.Parse(y[0]);
+    quantidade2 = int.Parse(y[1]);
+    valor2 = double.Parse(y[2]);
+    total = quantidade * valor + quantidade2 * valor2;
+    Console.WriteLine($"VALOR A PAGAR: R$ {total: 0.00}");
+  }
+}
